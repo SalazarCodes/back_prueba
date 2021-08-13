@@ -1,0 +1,35 @@
+package com.lsalazar.prueba.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.lsalazar.prueba.entity.DetalleProducto;
+import com.lsalazar.prueba.repository.DetalleProductoRepository;
+
+@Service
+public class DetalleProductoService {
+	
+	@Autowired
+	DetalleProductoRepository detalleProductoRepository;
+	
+	public List<DetalleProducto> listarClientes(){
+		return detalleProductoRepository.getProductos();
+	}
+	
+	public Optional<DetalleProducto> getClienteById(int id){
+		return detalleProductoRepository.getProductosById(id);
+	}
+	
+	public void insertarCliente(DetalleProducto detalleProducto) {
+		detalleProductoRepository.insertarCliente(cliente.getNombre(), cliente.getApellidos(), cliente.getRuc(), 
+										  cliente.getDni(), cliente.getDireccion(), cliente.getTelefono(), 
+										  cliente.getDistrito());
+	}
+	
+	public void deleteCliente(int id) {
+		clienteRepository.deleteCliente(id);
+	}
+}

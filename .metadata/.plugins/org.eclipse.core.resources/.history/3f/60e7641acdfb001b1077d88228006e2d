@@ -1,0 +1,5 @@
+package com.lsalazar.prueba.repository;
+
+public class ClienteRepository {
+
+}

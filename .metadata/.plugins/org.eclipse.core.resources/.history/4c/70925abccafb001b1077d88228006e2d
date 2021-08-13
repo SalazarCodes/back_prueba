@@ -1,0 +1,8 @@
+package com.lsalazar.prueba.entity;
+
+public class cliente {
+	
+	private int id;
+	pri
+
+}

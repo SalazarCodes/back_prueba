@@ -1,0 +1,5 @@
+package com.lsalazar.prueba.controller;
+
+public class ClienteController {
+
+}

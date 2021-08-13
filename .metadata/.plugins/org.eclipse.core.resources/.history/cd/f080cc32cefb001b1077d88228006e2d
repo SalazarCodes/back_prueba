@@ -1,0 +1,11 @@
+package com.lsalazar.prueba.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.lsalazar.prueba.entity.Cliente;
+
+public interface ClienteRepository extends JpaRepository<Cliente, Integer>{
+	
+	List<Cliente> getClientes();
+
+}

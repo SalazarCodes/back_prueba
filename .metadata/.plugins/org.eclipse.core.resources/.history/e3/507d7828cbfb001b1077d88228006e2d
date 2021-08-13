@@ -1,0 +1,14 @@
+package com.lsalazar.prueba.entity;
+
+public class cliente {
+	
+	private int id;
+	private String nombre;
+	private String apellidos;
+	private String ruc;
+	private String dni;
+	private String direccion;
+	private String telefono;
+	private String distrito;
+	private String estado;
+}
